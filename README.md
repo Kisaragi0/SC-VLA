@@ -1,14 +1,16 @@
 # 🤖 Self-Correcting VLA: Online Action Refinement via Sparse World Imagination
-
 <div align="center">
-  <img src="docs/imgs/detail_framework.png" alt="SC-VLA" width="900">
+  <img src="docs/imgs/general_framework.png" alt="SC-VLA-general" width="900">
+  <img src="docs/imgs/detail_framework.png" alt="SC-VLA-detail" width="900">
 </div>
 
+ We present Self-Correcting VLA (SC-VLA), a novel framework designed to enhance physical grounding through intrinsic self-improvement. The model is equipped with Sparse World Imagination (SPI) to forecast task progress and future trajectory trends, and Online Action Refinement (OAR) to dynamically optimize policies via residual adjustments and reshaped rewards. SC-VLA achieves superior performance on ManiSkill and real-world ARX5 benchmarks, surpassing baselines in both success rate and execution throughput.
+ 
 > 📜 [[paper](https://arxiv.org/abs/2602.21633)] 🤗 [[datasets](https://huggingface.co/datasets/Kisaragi0/arx5_real_world_datasets)]
 
 ## 🚀 News
-- (🔥 New) **(2025.2.8)** We have released the code and datasets of SC-VLA !
-- (🔥 New) **(2025.2.8)** Our paper is released on the arXiv.
+- (🔥 New) **(2026.2.26)** We have released the code and datasets of SC-VLA !
+- (🔥 New) **(2026.2.25)** Our paper is released on the arXiv.
 
 ## Preparation
 Here we provide a conda environment setup for the project.
@@ -118,13 +120,10 @@ Our work is built upon the following projects, Thanks for their great open-sourc
 ## Citation
 If you find this project useful, please consider citing our work:
 ```bibtex
-@misc{liu2026selfcorrectingvlaonlineaction,
+@article{SC-VLA,
       title={Self-Correcting VLA: Online Action Refinement via Sparse World Imagination}, 
       author={Chenyv Liu and Wentao Tan and Lei Zhu and Fengling Li and Jingjing Li and Guoli Yang and Heng Tao Shen},
+      journal={arXiv preprint arXiv:2602.21633},
       year={2026},
-      eprint={2602.21633},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2602.21633}, 
 }
 ```
